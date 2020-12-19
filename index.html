@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+<title>upendomyfair</title>
+<style>
+	*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient (to right, #9c27b0, #8ecdff);
+}
+
+nav{
+	width: 80%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	flex-basis: 20%;
+}
+
+.logo img{
+	width: 150px;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+</style>
+</head>
+
+<body> 
+	<div class="main">
+		<nav>
+			<div class="logo">
+				<img src="">
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#">Home</li>
+					<li><a href="#">Phone</li>
+					<li><a href="#">Accessories</li>
+					<li><a href="#">Cart</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="" class="mobile">
+			<div id="circle">
+				<div class="feature one">
+					<img src="">
+				</div>
+				<h1>Camera</h1>
+				<p>12mp,wide angle lens</p>
+			</div>
+		</div>
+		<div class="feature one">
+					<img src="">
+				</div>
+				<h1>Camera</h1>
+				<p>12mp,wide angle lens</p>
+			</div>
+		</div>
+		<div class="feature one">
+					<img src="">
+				</div>
+				<h1>Camera</h1>
+				<p>12mp,wide angle lens</p>
+			</div>
+		</div>
+		<div class="feature one">
+					<img src="">
+				</div>
+				<h1>Camera</h1>
+				<p>12mp,wide angle lens</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="controls">
+		<img src="" id="upbtn">
+		<h3>Features</h3>
+		<img src="" id="downbtn">
+	</div>
+	<script>
+
+		var circle=document.getElementByid("circle");
+		var upbtn=document.getElementByid("upbtn");
+		var downbtn=document.getElementByid("downbtn");
+
+		var rotatevalue=circle.style.transform;
+		var rotatesum;
+
+		upbtn.onclick=functon()
+		{
+			rotatesum=rotatevalue+"rotate(-90deg)";
+		    circle.style.transform=rotatesum;
+		    rotatevalue=rotatesum
+	    }
+
+	downbtn.onclick=functon()
+		{
+			rotatesum=rotatevalue+"rotate(90deg)";
+		    circle.style.transform=rotatesum;
+		    rotatevalue=rotatesum
+	    }
+	</script>
+</body>
